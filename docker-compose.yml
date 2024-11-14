@@ -1,5 +1,5 @@
 services:
-  app:
+  node:
     image: profile-react
     container_name: profile-react
     platform: linux/arm64
@@ -8,8 +8,5 @@ services:
     ports:
       - 5173:5173
     volumes:
-      - ./src:/app/src
-      - ./publish:/app/publish
-      - ./vite.config.ts:/app/vite.config.ts
-      - ./index.html:/app/index.html
+      - .:/app/
     command: npm run dev
