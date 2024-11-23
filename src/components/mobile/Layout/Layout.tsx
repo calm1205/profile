@@ -10,8 +10,8 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({ title, image, items }) => {
   return (
     <Container>
-      <TitleWrapper>{title}</TitleWrapper>
       <ImageWrapper>{image}</ImageWrapper>
+      <TitleWrapper>{title}</TitleWrapper>
       {items.map((item, index) => (
         <React.Fragment key={index}>{item}</React.Fragment>
       ))}

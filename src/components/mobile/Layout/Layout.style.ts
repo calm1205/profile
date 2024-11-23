@@ -12,5 +12,5 @@ export const TitleWrapper = styled.div`
 `
 
 export const ImageWrapper = styled.div`
-  width: 200px;
+  width: 80%;
 `
