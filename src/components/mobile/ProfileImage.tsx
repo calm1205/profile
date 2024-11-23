@@ -3,6 +3,8 @@ import profileUrl from "@/assets/profile.png"
 
 /**
  * プロフィールの画像
+ *
+ * blurのみだと最下部の画像が見えるので、その部分をWhiteBoxで白く塗りつぶし
  */
 export const ProfileImage: React.FC = () => {
   return (
