@@ -8,9 +8,9 @@ export const Container = styled.div`
   height: 100vh;
 `
 
-export const TitleWrapper = styled.div`
-  margin-bottom: 16px;
-`
+export const TitleWrapper = styled.div``
+
+export const SubText = styled.div``
 
 export const ImageWrapper = styled.div`
   width: 80%;
