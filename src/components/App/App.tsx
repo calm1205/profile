@@ -1,5 +1,4 @@
 import { Mobile } from "@/components/mobile/Mobile"
-import "./App.css"
 import { useEffect, useRef, useState } from "react"
 
 const LAPTOP_WIDTH = 1024
