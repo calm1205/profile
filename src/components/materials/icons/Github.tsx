@@ -2,8 +2,8 @@ import { Svg } from "./Svg"
 
 export const IconGithub: React.FC = () => (
   <Svg
-    width="22"
-    height="22"
+    width="35"
+    height="35"
     viewBox="-2 -2 100 100"
     xmlns="http://www.w3.org/2000/svg"
   >

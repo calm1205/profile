@@ -2,8 +2,8 @@ import { Svg } from "./Svg"
 
 export const IconX = () => (
   <Svg
-    width="20"
-    height="20"
+    width="35"
+    height="35"
     viewBox="0 0 1200 1227"
     xmlns="http://www.w3.org/2000/svg"
   >
