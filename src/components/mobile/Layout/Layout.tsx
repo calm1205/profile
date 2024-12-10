@@ -5,6 +5,7 @@ import {
   SubText,
   ImageWrapper,
   Wrapper,
+  SnsIcons,
 } from "./Layout.style"
 
 interface LayoutProps {
@@ -26,7 +27,7 @@ export const Layout: React.FC<LayoutProps> = ({
         <ImageWrapper>{image}</ImageWrapper>
         <TitleWrapper>{title}</TitleWrapper>
         <SubText>{subText}</SubText>
-        {items}
+        <SnsIcons>{items}</SnsIcons>
       </Container>
     </Wrapper>
   )

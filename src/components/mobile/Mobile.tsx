@@ -1,15 +1,38 @@
 import { Layout } from "@/components/mobile/Layout/Layout"
 import { ProfileImage } from "@/components/mobile/ProfileImage"
 import { MY_NAME } from "@/lib/constants"
-import { SnsLinks } from "./SnsLinks/SnsLinks"
+import { styled } from "styled-components"
+import { Link } from "../materials/Link/Link"
+import { IconX } from "../materials/icons/X"
+import { IconLinkedin } from "../materials/icons/Linkedin"
+import { IconGithub } from "../materials/icons/Github"
 
 export const Mobile: React.FC = () => {
   return (
     <Layout
-      title={<h1>{MY_NAME}</h1>}
-      subText={<p>Software Engineer</p>}
+      title={<H1>{MY_NAME}</H1>}
+      subText={<P>Software Engineer</P>}
       image={<ProfileImage />}
-      items={<SnsLinks />}
+      items={
+        <>
+          <Link href="#">
+            <IconX />
+          </Link>
+          <Link href="#">
+            <IconLinkedin />
+          </Link>
+          <Link href="#">
+            <IconGithub />
+          </Link>
+        </>
+      }
     />
   )
 }
+
+const H1 = styled.h1`
+  font-size: clamp(2rem, 6vw, 4rem);
+`
+const P = styled.p`
+  font-size: clamp(1rem, 3vw, 1.5rem);
+`
