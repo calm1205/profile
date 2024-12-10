@@ -1,11 +1,17 @@
 import React, { ReactNode } from "react"
-import { Container, TitleWrapper, SubText, ImageWrapper } from "./Layout.style"
+import {
+  Container,
+  TitleWrapper,
+  SubText,
+  ImageWrapper,
+  Wrapper,
+} from "./Layout.style"
 
 interface LayoutProps {
   title: ReactNode
   subText: ReactNode
   image: ReactNode
-  items: ReactNode[]
+  items: ReactNode
 }
 
 export const Layout: React.FC<LayoutProps> = ({
@@ -15,13 +21,13 @@ export const Layout: React.FC<LayoutProps> = ({
   items,
 }) => {
   return (
-    <Container>
-      <ImageWrapper>{image}</ImageWrapper>
-      <TitleWrapper>{title}</TitleWrapper>
-      <SubText>{subText}</SubText>
-      {items.map((item, index) => (
-        <React.Fragment key={index}>{item}</React.Fragment>
-      ))}
-    </Container>
+    <Wrapper>
+      <Container>
+        <ImageWrapper>{image}</ImageWrapper>
+        <TitleWrapper>{title}</TitleWrapper>
+        <SubText>{subText}</SubText>
+        {items}
+      </Container>
+    </Wrapper>
   )
 }
