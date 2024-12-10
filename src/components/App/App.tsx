@@ -1,5 +1,6 @@
-import { Mobile } from "@/components/mobile/Mobile"
 import { useEffect, useRef, useState } from "react"
+import { Laptop } from "@/components/laptop/Laptop"
+import { Mobile } from "@/components/mobile/Mobile"
 
 const LAPTOP_WIDTH = 1024
 
@@ -20,7 +21,7 @@ const App: React.FC = () => {
     }
   }, [])
 
-  return <main ref={mainRef}>{isLaptop ? <h1>desktop</h1> : <Mobile />}</main>
+  return <main ref={mainRef}>{isLaptop ? <Laptop /> : <Mobile />}</main>
 }
 
 export default App

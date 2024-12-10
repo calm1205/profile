@@ -1,6 +1,6 @@
 import { Layout } from "@/components/mobile/Layout/Layout"
 import { ProfileImage } from "@/components/mobile/ProfileImage"
-import { MY_NAME } from "@/lib/constants"
+import { JOB_TITLE, MY_NAME } from "@/lib/constants"
 import { styled } from "styled-components"
 import { Link } from "../materials/Link/Link"
 import { IconX } from "../materials/icons/X"
@@ -11,7 +11,7 @@ export const Mobile: React.FC = () => {
   return (
     <Layout
       title={<H1>{MY_NAME}</H1>}
-      subText={<P>Software Engineer</P>}
+      subText={<P>{JOB_TITLE}</P>}
       image={<ProfileImage />}
       items={
         <>
