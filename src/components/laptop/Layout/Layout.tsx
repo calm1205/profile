@@ -5,34 +5,40 @@ interface LayoutProps {
   title: ReactNode
   subText: ReactNode
   image: ReactNode
-  items: ReactNode
+  snsIcons: ReactNode
 }
 
 export const Layout: React.FC<LayoutProps> = ({
   title,
   subText,
   image,
-  items,
-}) => {
-  return (
-    <Wrapper>
-      <ImageWrapper>{image}</ImageWrapper>
+  snsIcons,
+}) => (
+  <Container>
+    <ImageWrapper>{image}</ImageWrapper>
+    <ProfileWrapper>
       <div>
         {title}
         {subText}
-        {items}
+        {snsIcons}
       </div>
-    </Wrapper>
-  )
-}
+    </ProfileWrapper>
+  </Container>
+)
 
-const Wrapper = styled.div`
+const Container = styled.div`
+  height: 100vh;
   width: 100vw;
   display: flex;
 `
-
 const ImageWrapper = styled.div`
   display: flex;
   align-items: end;
-  max-width: 800px;
+  width: 680px;
+  max-width: 680px;
+`
+const ProfileWrapper = styled.div`
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 `

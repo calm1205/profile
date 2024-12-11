@@ -18,9 +18,3 @@ export const ImageWrapper = styled.div`
   width: 80%;
   max-width: 400px;
 `
-
-export const SnsIcons = styled.div`
-  display: flex;
-  margin-top: 30px;
-  gap: 16px;
-`

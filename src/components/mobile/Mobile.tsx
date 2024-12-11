@@ -1,12 +1,12 @@
 import { Layout } from "@/components/mobile/Layout/Layout"
 import { ProfileImage } from "@/components/mobile/ProfileImage"
-import { Name } from "./Name"
-import { SubText } from "./SubText"
-import { SnsIcons } from "./SnsIcons"
+import { MyName } from "@/components/materials/MyName"
+import { SubText } from "../materials/SubText"
+import { SnsIcons } from "../materials/SnsIcons"
 
 export const Mobile: React.FC = () => (
   <Layout
-    title={<Name />}
+    title={<MyName />}
     subText={<SubText />}
     image={<ProfileImage />}
     snsIcons={<SnsIcons />}

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react"
-import { Container, ImageWrapper, Wrapper, SnsIcons } from "./Layout.style"
+import { Container, ImageWrapper, Wrapper } from "./Layout.style"
 
 interface LayoutProps {
   title: ReactNode
@@ -17,9 +17,9 @@ export const Layout: React.FC<LayoutProps> = ({
   <Wrapper>
     <Container>
       <ImageWrapper>{image}</ImageWrapper>
-      <div>{title}</div>
-      <div>{subText}</div>
-      <SnsIcons>{snsIcons}</SnsIcons>
+      {title}
+      {subText}
+      {snsIcons}
     </Container>
   </Wrapper>
 )

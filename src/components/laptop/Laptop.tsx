@@ -1,14 +1,14 @@
 import profileUrl from "@/assets/profile.png"
 import { Layout } from "./Layout/Layout"
-import { JOB_TITLE, MY_NAME } from "@/lib/constants"
+import { MyName } from "@/components/materials/MyName"
+import { SubText } from "../materials/SubText"
+import { SnsIcons } from "../materials/SnsIcons"
 
-export const Laptop: React.FC = () => {
-  return (
-    <Layout
-      title={<p>{MY_NAME}</p>}
-      subText={<p>{JOB_TITLE}</p>}
-      image={<img src={profileUrl} alt="profile" />}
-      items={<div>items</div>}
-    />
-  )
-}
+export const Laptop: React.FC = () => (
+  <Layout
+    title={<MyName />}
+    subText={<SubText />}
+    image={<img src={profileUrl} alt="profile" />}
+    snsIcons={<SnsIcons />}
+  />
+)
