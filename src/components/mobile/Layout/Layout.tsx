@@ -1,34 +1,25 @@
 import React, { ReactNode } from "react"
-import {
-  Container,
-  TitleWrapper,
-  SubText,
-  ImageWrapper,
-  Wrapper,
-  SnsIcons,
-} from "./Layout.style"
+import { Container, ImageWrapper, Wrapper, SnsIcons } from "./Layout.style"
 
 interface LayoutProps {
   title: ReactNode
   subText: ReactNode
   image: ReactNode
-  items: ReactNode
+  snsIcons: ReactNode
 }
 
 export const Layout: React.FC<LayoutProps> = ({
   title,
   subText,
   image,
-  items,
-}) => {
-  return (
-    <Wrapper>
-      <Container>
-        <ImageWrapper>{image}</ImageWrapper>
-        <TitleWrapper>{title}</TitleWrapper>
-        <SubText>{subText}</SubText>
-        <SnsIcons>{items}</SnsIcons>
-      </Container>
-    </Wrapper>
-  )
-}
+  snsIcons,
+}) => (
+  <Wrapper>
+    <Container>
+      <ImageWrapper>{image}</ImageWrapper>
+      <div>{title}</div>
+      <div>{subText}</div>
+      <SnsIcons>{snsIcons}</SnsIcons>
+    </Container>
+  </Wrapper>
+)

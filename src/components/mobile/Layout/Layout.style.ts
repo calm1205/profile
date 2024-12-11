@@ -14,10 +14,6 @@ export const Container = styled.div`
   padding: 40px 0;
 `
 
-export const TitleWrapper = styled.div``
-
-export const SubText = styled.div``
-
 export const ImageWrapper = styled.div`
   width: 80%;
   max-width: 400px;
