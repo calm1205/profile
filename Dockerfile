@@ -1,4 +1,4 @@
-FROM node:22-slim
-RUN apt-get update
-RUN apt-get install -y \
-    git
+FROM nginx:alpine
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY src/ /usr/share/nginx/html/ 

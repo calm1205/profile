@@ -1,17 +1,14 @@
 services:
-  node:
-    image: profile-react
-    container_name: profile-react
-    platform: linux/arm64
-    working_dir: /app
+  web:
     build: .
+    image: profile-nginx
     ports:
-      - 5173:5173
+      - "8080:80"
     volumes:
-      - .:/app/
-      - node_modules:/app/node_modules
-    command: npm run dev
-
-volumes:
-  node_modules:
-    driver: local
+      - ./src:/usr/share/nginx/html
+    restart: always
+    develop:
+      watch:
+        - path: ./src
+          action: rebuild
+          target: /usr/share/nginx/html
