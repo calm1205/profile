@@ -1,1 +1,1 @@
-# [profile](https://calm1205.github.io/life-span/)
+# [profile](https://calm1205.github.io/profile/)
