@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     padding: 40px 0px;
   }
 
@@ -11,26 +10,26 @@
     width: 80%;
     max-width: 400px;
     position: relative;
+  }
+  .profile-image img {
+    width: 100%;
+  }
 
-    img {
-      width: 100%;
-    }
-
-    .blur {
-      position: absolute;
-      inset: auto 0 0 0;
-      height: 20%;
-      background-color: white;
-      filter: blur(10px);
-      pointer-events: none;
-    }
-    .white-bottom {
-      height: 20px;
-      background-color: white;
-    }
+  .profile-image .blur {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 20%;
+    background-color: white;
+    filter: blur(10px);
+    pointer-events: none;
+  }
+  .white-bottom {
+    height: 20px;
+    background-color: white;
   }
 
   .profile {
     align-items: center;
+    gap: 1rem;
   }
 }
